@@ -1,0 +1,82 @@
+.featured-products__wrapper{
+  background: #ffffff;
+  .featured-products__title-wrapper{
+    background-image: url("./../images/banner-background.png");
+    width: 100%;
+  }
+  .featured-products__title {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 30px 0;
+    span{
+      font-family: "Bebas Neue", Serif, sans-serif;
+      font-size: 31px;
+      color: #ffffff;
+    }
+  }
+  .featured-products__container{
+    max-width: $max-width;
+    margin: 0 auto;
+    .featured-products__items{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 48px 10px 0;
+      .featured-products__item{
+        padding: 21px 0 30px;
+        margin: 0 0 34px;
+        width: calc(calc(100% / 3) - 52px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        border-bottom: solid 3px #3cc395;
+        box-shadow: 0 0 2px rgba(0,0,0,0.3);
+        transition: all 0.4s ease-in;
+        &:hover{
+          transition: transform 0.4s ease-out, box-shadow 0.2s ease-out, bacground-color 0.4s ease-out;
+          transform: translateY(-5px);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          background: linear-gradient(0deg, rgba(60,195,149,1) 0%, rgba(60,195,149,1) 2%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 100%);
+          cursor: pointer;
+
+        }
+        .featured-products__item-title{
+          span{
+            font-family: "Bebas Neue", Serif, sans-serif;
+            font-size: 27px;
+            color: darkgrey;
+          }
+        }
+        .featured-products__item-details{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 50%;
+          .featured-products__item-price{
+            span{
+              font-family: "Bebas Neue", Serif, sans-serif;
+              font-size: 27px;
+              color: darkgrey;
+            }
+          }
+          .featured-products__item-link{
+            a{
+              text-decoration: none;
+              font-size: 18px;
+              font-family: "Bebas Neue", Serif, sans-serif;
+              color: #ffffff;
+              background-color: #3cc395;
+              display: inline-block;
+              border-radius: 5px;
+              padding: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Aditii Web Store</title>
+</head>
+<body>
+<header>
+    <div class="header__container">
+        <div class="header__logo">
+            <a href="#">
+                <img src="./images/logo.png" alt="Logo" title="Logo">
+            </a>
+        </div>
+        <div class="header__search">
+            <form>
+                <label>
+                    <input type="search" name="" id="search-global">
+                </label>
+            </form>
+        </div>
+        <div class="header__cart">
+            <a href="#"><img src="./images/cart.png" alt="Cart" title="Cart"></a>
+            <span class="header__cart-total">$300</span>
+        </div>
+    </div>
+    <nav>
+        <div class="nav__container">
+            <ul class="nav__list">
+                <li><a href="#">home</a></li>
+                <li><a href="#">sale</a></li>
+                <li><a href="#">handbags</a></li>
+                <li><a href="#">wallets</a></li>
+                <li><a href="#">accessories</a></li>
+                <li><a href="#">mens store</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">vintage</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="banner__wrapper">
+        <div class="banner__container">
+            <div class="banner__image">
+                <img id="slider__img" src="./images/banner/tshirt_1.png" alt="T-SHIRT GOES HERE">
+            </div>
+            <div class="banner__description">
+                <div class="banner__description-title">
+                    <span id="slider__title">
+                        cowhide standard crew
+                    </span>
+                </div>
+                <div class="banner__description-text">
+                    <span id="slider__description">
+                        White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.
+                    </span>
+                </div>
+                <div class="banner__description-link">
+                    <a href="#">shop now</a>
+                </div>
+                <div class="banner__description-selector">
+                    <span class="banner__description-selector-item" onclick="currentSlide(1)"></span>
+                    <span class="banner__description-selector-item" onclick="currentSlide(2)"></span>
+                    <span class="banner__description-selector-item" onclick="currentSlide(3)"></span>
+                    <span class="banner__description-selector-item" onclick="currentSlide(4)"></span>
+                    <span class="banner__description-selector-item" onclick="currentSlide(5)"></span>
+                    <span class="banner__description-selector-item" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider__wrapper">
+        <div class="slider__container">
+            <div class="slider__item">
+                <div class="slider__item-img">
+                    <img src="./images/slider/shoes.png" alt="shoes">
+                </div>
+                <div class="slider__item-details">
+                    <div class="slider__item-title">
+                        <span>branded shoes</span>
+                    </div>
+                    <div class="slider__item-link">
+                        <a href="#">shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-img">
+                    <img src="./images/slider/tshirt.png" alt="shoes">
+                </div>
+                <div class="slider__item-details">
+                    <div class="slider__item-title">
+                        <span>branded tshirt</span>
+                    </div>
+                    <div class="slider__item-link">
+                        <a href="#">shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-img">
+                    <img src="./images/slider/pants.png" alt="shoes">
+                </div>
+                <div class="slider__item-details">
+                    <div class="slider__item-title">
+                        <span>branded pants</span>
+                    </div>
+                    <div class="slider__item-link">
+                        <a href="#">shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="featured-products__wrapper">
+        <div class="featured-products__title-wrapper">
+            <div class="featured-products__title">
+                <span>featured products</span>
+            </div>
+        </div>
+        <div class="featured-products__container">
+            <div class="featured-products__items">
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/women_shoes.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded shoe</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$300</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/women_tees.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded tees</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$25</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/women_tshirts.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded t-shirts</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$15</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/men_wallet.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded wallet</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$100</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/women_bag.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded bags</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$250</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+                <div class="featured-products__item">
+                    <div class="featured-products__item-img">
+                        <img src="./images/men_cargos.png" alt="">
+                    </div>
+                    <div class="featured-products__item-title">
+                        <span>branded cargo</span>
+                    </div>
+                    <div class="featured-products__item-details">
+                        <div class="featured-products__item-price"><span>$50</span></div>
+                        <div class="featured-products__item-link"><a href="#">buy now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer__container">
+        <div class="footer__list">
+            <span>featured sale</span>
+            <ul>
+                <li><a href="#">50% discount</a></li>
+                <li><a href="#">hats</a></li>
+                <li><a href="#">gloves</a></li>
+                <li><a href="#">glasses</a></li>
+                <li><a href="#">t-shirts</a></li>
+                <li><a href="#">jeans</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">warm clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer__list">
+            <span>mens store</span>
+            <ul>
+                <li><a href="#">summer 2021</a></li>
+                <li><a href="#">hats</a></li>
+                <li><a href="#">gloves</a></li>
+                <li><a href="#">glasses</a></li>
+                <li><a href="#">t-shirts</a></li>
+                <li><a href="#">jeans</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">warm clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer__list">
+            <span>women store</span>
+            <ul>
+                <li><a href="#">summer 2021</a></li>
+                <li><a href="#">hats</a></li>
+                <li><a href="#">gloves</a></li>
+                <li><a href="#">glasses</a></li>
+                <li><a href="#">dresses</a></li>
+                <li><a href="#">skirts</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">warm clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer__list">
+            <span>quick links</span>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our network</a></li>
+                <li><a href="#">view us on instagram</a></li>
+                <li><a href="#">find us via google maps</a></li>
+                <li><a href="#">follow us on twitter</a></li>
+                <li><a href="#">client support</a></li>
+                <li><a href="#">about cooperation</a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__copyright-wrapper">
+        <div class="footer__copyright">
+            <span>Copyright (c) 2021 Css-Author</span>
+        </div>
+    </div>
+</footer>
+<script src="./js/slider.js"></script>
+</body>
+</html>

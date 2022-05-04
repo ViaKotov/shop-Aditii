@@ -1,0 +1,50 @@
+header{
+  nav{
+    background-color: $base-color;
+    .nav__container{
+      margin: 0 auto;
+      max-width: $max-width;
+      .nav__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin: 0;
+        padding: 4px 0 5px;
+        & > li{
+          &:not(:last-of-type){
+            border-left: solid 2px transparent;
+            position: relative;
+            &:after{
+              content: "";
+              position: absolute;
+              height: 18px;
+              width: 2px;
+              background-color: #ffffff;
+              right: 0;
+              top: calc(50% - 9px);
+            }
+          }
+        }
+        li{
+          flex-grow: 1;
+          text-align: center;
+          font-family: "Bebas Neue", Serif, sans-serif;
+          font-size: 21px;
+          list-style: none;
+          a{
+            display: block;
+            padding: 0 12px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: .3s ease-in;
+            &:hover{
+              text-shadow: 0 0 2px rgba(0,0,0, 0.8);
+              transition: .3s ease-out;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

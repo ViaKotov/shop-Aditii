@@ -1,0 +1,93 @@
+.banner__wrapper{
+  background: url("./../images/banner-background.png");
+  .banner__container{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 67px 0 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    &:hover{
+      .banner__image > img{
+        opacity: 1;
+        transition: .3s ease-out;
+        cursor: pointer;
+      }
+    }
+    .banner__image{
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      img{
+        opacity: 0.7;
+        transition: .3s ease-in;
+      }
+    }
+    .banner__description{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      &-title{
+        max-width: 50%;
+        padding: 15px 0;
+        span{
+          color: #ffffff;
+          font-size: 61px;
+          font-family: "Bebas Neue", Serif, sans-serif;
+          line-height: 58px;
+        }
+      }
+      &-text{
+        max-width: 70%;
+        span{
+          font-family: "Open Sans", Serif, sans-serif;
+          font-size: 17px;
+          color: #ffffff;
+          line-height: 30px;
+        }
+      }
+      &-link{
+        padding: 21px 0;
+        a{
+          display: block;
+          text-decoration: none;
+          font-family: "Bebas Neue", Serif, sans-serif;
+          font-size: 27px;
+          color: #ffffff;
+          border: solid 3px #ffffff;
+          border-radius: 10px;
+          padding: 3px 25px;
+          transition: .3s ease-in;
+          &:hover{
+            text-shadow: 0 0 4px rgba(0,0,0,0.7);
+            background-color: rgba(0,0,0,0.3);
+            transition: .3s ease-out;
+          }
+        }
+      }
+      &-selector{
+        padding: 25px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25%;
+        &-item{
+          height: 10px;
+          width: 10px;
+          display: block;
+          border-radius: 50%;
+          transition: background-color 0.2s ease-in;
+          background-color: rgba(255, 255, 255, 0.8);
+          &:hover{
+            transition: background-color 0.2s ease-out;
+            background-color: rgba(255, 255, 255, 1.0);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
